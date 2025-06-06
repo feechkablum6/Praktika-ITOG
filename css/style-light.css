@@ -1,0 +1,66 @@
+/* Стили для светлой темы */
+:root {
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #f4f4f4;
+    --accent-color: #e0e0e0;
+    --primary-text-color: #0056b3;
+    --secondary-text-color: #333333;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+}
+
+h2, h3, h4 {
+    color: var(--primary-text-color);
+}
+
+a {
+    color: var(--primary-text-color);
+}
+
+.btn {
+    background-color: var(--primary-text-color);
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+.header {
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.nav__list a {
+    color: var(--secondary-text-color);
+}
+
+.logo span {
+    color: var(--primary-text-color);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"] {
+    background-color: #fff;
+    border: 1px solid var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
+.contest-card,
+.review {
+    background-color: var(--secondary-bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: var(--secondary-bg-color);
+    color: #555;
+}
+.footer-nav a {
+    color: #555;
+} 

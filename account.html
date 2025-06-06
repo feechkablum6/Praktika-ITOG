@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Моя семья - мой космос</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="img/imglogo.svg" alt="Логотип">
+                    <span>Моя семья - мой космос</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html#auth">Авторизация</a></li>
+                        <!-- Пункт "Регистрация" отсутствует -->
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="index.html#contests">Конкурсы</a></li>
+                        <li><a href="index.html#search">Поиск</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="account-section">
+            <div class="container">
+                <h2>Личный кабинет семьи Петровых</h2>
+                <p>Добро пожаловать! Здесь вы можете управлять участием в наших мероприятиях, следить за расписанием и просматривать свои достижения.</p>
+
+                <div class="account-grid">
+                    <div class="account-form-wrapper">
+                        <h3>Запись на новый конкурс</h3>
+                        <form class="account-form">
+                            <label for="contest-select">Выберите конкурс:</label>
+                            <select id="contest-select">
+                                <option>Интеллектуальный турнир "Семейный гамбит"</option>
+                                <option>Творческий марафон "Династия талантов"</option>
+                                <option>Кулинарный поединок "Галактика Вкуса"</option>
+                                <option>Спорт-состязание "Быстрее, выше, веселее!"</option>
+                                <option>Творческая мастерская "Арт-семья"</option>
+                                <option>Конкурс поделок "Наша вселенная"</option>
+                            </select>
+
+                            <label for="contest-date">Дата проведения:</label>
+                            <input type="date" id="contest-date" value="2024-08-10">
+
+                            <label for="participants-number">Количество участников:</label>
+                            <input type="number" id="participants-number" min="1" value="2">
+
+                            <button type="submit" class="btn">Записаться</button>
+                        </form>
+                    </div>
+
+                    <div class="upcoming-events">
+                        <h3>Ваши предстоящие события</h3>
+                        <div class="event-card">
+                            <h4>Творческий марафон "Династия талантов"</h4>
+                            <p><strong>Дата:</strong> 25.07.2024</p>
+                            <p><strong>Статус:</strong> Вы зарегистрированы</p>
+                            <a href="competition.html" class="btn-small">Подробнее о конкурсе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+             <div class="footer-content">
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+                    <p>Email: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index-light.html">Главная (светлая)</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="404.html">Страница не найдена</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Моя семья - мой космос</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="img/imglogo.svg" alt="Логотип">
+                    <span>Моя семья - мой космос</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html#auth">Авторизация</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="index.html#contests">Конкурсы</a></li>
+                        <li><a href="index.html#search">Поиск</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="registration-section">
+            <div class="container">
+                <h2>Создайте аккаунт вашей семьи</h2>
+                <p>Присоединяйтесь к нашему сообществу! Регистрация займет всего пару минут и откроет доступ ко всем конкурсам и мероприятиям. Создайте единый профиль для всей семьи, чтобы вместе участвовать, побеждать и делиться радостью.</p>
+                <form class="registration-form">
+                    <input type="email" placeholder="Email*" required>
+                    <input type="text" placeholder="Ваше имя (капитан команды)*" required>
+                    <input type="text" placeholder="Фамилия вашей семьи*" required>
+
+                    <label for="age-input">Ваш возраст (введите числом):</label>
+                    <input type="number" id="age-input" placeholder="Ваш возраст*" required>
+
+                    <label for="age-range">Возраст (выберите ползунком):</label>
+                    <input type="range" id="age-range" min="6" max="100" value="18">
+                    <output for="age-range">18</output>
+
+                    <fieldset>
+                        <legend>Пол:</legend>
+                        <label><input type="radio" name="gender" value="male"> Мужской</label>
+                        <label><input type="radio" name="gender" value="female"> Женский</label>
+                    </fieldset>
+
+                    <input type="password" placeholder="Пароль*" required>
+                    <input type="password" placeholder="Повторите пароль*" required>
+
+                    <label for="family-photo">Загрузите семейное фото:</label>
+                    <input type="file" id="family-photo" accept="image/*">
+
+                    <label>
+                        <input type="checkbox" required>
+                        Я даю согласие на обработку персональных данных*
+                    </label>
+
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </form>
+
+                <div class="family-members-section">
+                    <h3>Члены вашей семейной команды</h3>
+                    <div class="family-member">
+                        <span>Петров Иван, 35, Мужской</span>
+                        <button class="btn-small">Удалить</button>
+                    </div>
+                     <div class="family-member">
+                        <span>Петрова Анна, 32, Женский</span>
+                        <button class="btn-small">Удалить</button>
+                    </div>
+
+                    <h4>Добавить члена семьи</h4>
+                     <form class="add-member-form">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="Имя">
+                        <input type="number" placeholder="Возраст">
+                        <select>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                        <button type="button" class="btn">Добавить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+             <div class="footer-content">
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+                    <p>Email: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index-light.html">Главная (светлая)</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="404.html">Страница не найдена</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 

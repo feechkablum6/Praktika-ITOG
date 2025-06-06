@@ -1,0 +1,369 @@
+/* Общие стили */
+:root {
+    --primary-bg-color: #1a1a2e;
+    --secondary-bg-color: #16213e;
+    --accent-color: #0f3460;
+    --primary-text-color: #e94560;
+    --secondary-text-color: #ffffff;
+    --container-width: 1200px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h2, h3, h4 {
+    color: var(--primary-text-color);
+}
+
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #ff6384;
+    text-decoration: none;
+}
+
+/* Шапка */
+.header {
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding: 10px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между иконкой и текстом */
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__list a {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+/* Формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"] {
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+}
+
+/* Секции */
+.promo .slide-info {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.contest-card {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.review {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--secondary-bg-color);
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-nav li {
+    margin-bottom: 5px;
+}
+.footer-nav a {
+    color: #ccc;
+}
+
+/* Стили для страницы регистрации */
+.registration-form, .add-member-form {
+    margin-top: 20px;
+}
+
+.registration-form label, .registration-form fieldset {
+    margin-top: 10px;
+}
+
+fieldset {
+    border: 1px solid var(--accent-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    color: var(--primary-text-color);
+    padding: 0 10px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+}
+
+.family-members-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--accent-color);
+}
+
+.family-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-small:hover {
+     background-color: #ff6384;
+}
+
+/* Стили для страницы расписания */
+.schedule-table-container {
+    overflow-x: auto; /* Для адаптивности таблицы */
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+}
+
+.schedule-table th {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: var(--secondary-bg-color);
+}
+
+.schedule-table td:not(:first-child) {
+    width: 60px; /* Фиксированная ширина */
+    height: 60px; /* Фиксированная высота для создания квадрата */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.schedule-table .closed {
+    background-color: #555;
+    color: #888;
+    font-size: 1em;
+}
+
+/* Стили для страницы конкурса */
+.competition-stats {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.competition-description {
+    line-height: 1.8;
+}
+
+.user-review-print {
+    display: none; /* Скрыто по умолчанию, видно только при печати */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+}
+
+/* Стили для печати */
+@media print {
+    .header,
+    .footer,
+    .nav,
+    .competition-stats,
+    .competition-description,
+    main > section:not(.competition-details):not(.user-review-print) {
+        display: none;
+    }
+
+    .user-review-print {
+        display: block !important;
+    }
+
+    .competition-image {
+        filter: grayscale(100%);
+    }
+
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    .competition-title, h3, p, a, span, div {
+        color: #000 !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+} 
